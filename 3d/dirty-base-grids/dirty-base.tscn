@@ -1,0 +1,71 @@
+[gd_scene format=3 uid="uid://c5o47lb1er2jb"]
+
+[ext_resource type="Material" uid="uid://jq2ecetvtpjr" path="res://3d/dirty-base-grids/dirty_standard_material_3d.tres" id="1_8rea4"]
+
+[node name="Desert" type="Node3D" unique_id=899924791]
+
+[node name="Node3D" type="Node3D" parent="." unique_id=1525375816]
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="Node3D" unique_id=1578473998]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.0788318, 0.269989, 0)
+material = ExtResource("1_8rea4")
+
+[node name="CSGBox3D3" type="CSGBox3D" parent="Node3D" unique_id=1714475662]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.269989, 1.0894265)
+material = ExtResource("1_8rea4")
+
+[node name="CSGBox3D4" type="CSGBox3D" parent="Node3D" unique_id=727883905]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.0788318, 0.269989, 1.0894265)
+material = ExtResource("1_8rea4")
+
+[node name="CSGBox3D5" type="CSGBox3D" parent="Node3D" unique_id=299373468]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.1631298, 0.269989, 1.0894265)
+material = ExtResource("1_8rea4")
+
+[node name="CSGBox3D6" type="CSGBox3D" parent="Node3D" unique_id=2014842023]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.084298, 0.269989, 1.0894265)
+material = ExtResource("1_8rea4")
+
+[node name="CSGBox3D7" type="CSGBox3D" parent="Node3D" unique_id=1594560021]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.1631298, 0.269989, -0.00468266)
+material = ExtResource("1_8rea4")
+
+[node name="CSGBox3D8" type="CSGBox3D" parent="Node3D" unique_id=2012089932]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.084298, 0.269989, 0.0032519102)
+material = ExtResource("1_8rea4")
+
+[node name="CSGBox3D9" type="CSGBox3D" parent="Node3D" unique_id=711268373]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.269989, 2.1756625)
+material = ExtResource("1_8rea4")
+
+[node name="CSGBox3D10" type="CSGBox3D" parent="Node3D" unique_id=1184702053]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.0788318, 0.269989, 2.1756625)
+material = ExtResource("1_8rea4")
+
+[node name="CSGBox3D11" type="CSGBox3D" parent="Node3D" unique_id=1416017844]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.269989, 3.265089)
+material = ExtResource("1_8rea4")
+
+[node name="CSGBox3D12" type="CSGBox3D" parent="Node3D" unique_id=829491724]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.0788318, 0.269989, 3.265089)
+material = ExtResource("1_8rea4")
+
+[node name="CSGBox3D13" type="CSGBox3D" parent="Node3D" unique_id=380995734]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.1631298, 0.269989, 3.265089)
+material = ExtResource("1_8rea4")
+
+[node name="CSGBox3D14" type="CSGBox3D" parent="Node3D" unique_id=867833349]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.084298, 0.269989, 3.265089)
+material = ExtResource("1_8rea4")
+
+[node name="CSGBox3D15" type="CSGBox3D" parent="Node3D" unique_id=600128574]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.1631298, 0.269989, 2.1789145)
+material = ExtResource("1_8rea4")
+
+[node name="CSGBox3D16" type="CSGBox3D" parent="Node3D" unique_id=198702154]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.084298, 0.269989, 2.1789145)
+material = ExtResource("1_8rea4")
+
+[node name="CSGBox3D" type="CSGBox3D" parent="Node3D" unique_id=2134544143]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.269989, 0)
+material = ExtResource("1_8rea4")

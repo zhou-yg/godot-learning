@@ -1,0 +1,11 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://cd28uqmlo1jar"]
+
+[ext_resource type="Texture2D" uid="uid://ccucq1oke1u4l" path="res://3d/pbr-material/rocky_trail_02_diff_1k.jpg" id="1_kd1eu"]
+[ext_resource type="Texture2D" uid="uid://djn1dsyuktmpv" path="res://3d/pbr-material/rocky_trail_02_nor_gl_1k.jpg" id="2_5iv1k"]
+
+[resource]
+albedo_texture = ExtResource("1_kd1eu")
+metallic = 0.45
+metallic_specular = 0.0
+normal_enabled = true
+normal_texture = ExtResource("2_5iv1k")

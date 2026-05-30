@@ -1,0 +1,68 @@
+[gd_scene format=3 uid="uid://b8ebr5uogrc3g"]
+
+[ext_resource type="Material" uid="uid://b4em4mbtm4bcr" path="res://3d/whole-grids/water_shader_material.tres" id="1_q6fih"]
+
+[node name="WaterGrid" type="Node3D" unique_id=1683233181]
+
+[node name="CSGBox3D" type="CSGBox3D" parent="." unique_id=1924104058]
+material = ExtResource("1_q6fih")
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="." unique_id=1158223503]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.0788318, 0, 0)
+material = ExtResource("1_q6fih")
+
+[node name="CSGBox3D3" type="CSGBox3D" parent="." unique_id=1097993980]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1.0894265)
+material = ExtResource("1_q6fih")
+
+[node name="CSGBox3D4" type="CSGBox3D" parent="." unique_id=512246886]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.0788318, 0, 1.0894265)
+material = ExtResource("1_q6fih")
+
+[node name="CSGBox3D5" type="CSGBox3D" parent="." unique_id=372880994]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 2.158742)
+material = ExtResource("1_q6fih")
+
+[node name="CSGBox3D6" type="CSGBox3D" parent="." unique_id=1053730998]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.0788318, 0, 2.158742)
+material = ExtResource("1_q6fih")
+
+[node name="CSGBox3D7" type="CSGBox3D" parent="." unique_id=1495451281]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 3.2481685)
+material = ExtResource("1_q6fih")
+
+[node name="CSGBox3D8" type="CSGBox3D" parent="." unique_id=2068443350]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.0788318, 0, 3.2481685)
+material = ExtResource("1_q6fih")
+
+[node name="CSGBox3D9" type="CSGBox3D" parent="." unique_id=1807455452]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.1416755, 0, 0)
+material = ExtResource("1_q6fih")
+
+[node name="CSGBox3D10" type="CSGBox3D" parent="." unique_id=934938531]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.0628437, 0, 0)
+material = ExtResource("1_q6fih")
+
+[node name="CSGBox3D11" type="CSGBox3D" parent="." unique_id=1017412630]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.1416755, 0, 1.0894265)
+material = ExtResource("1_q6fih")
+
+[node name="CSGBox3D12" type="CSGBox3D" parent="." unique_id=1289509131]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.0628437, 0, 1.0894265)
+material = ExtResource("1_q6fih")
+
+[node name="CSGBox3D13" type="CSGBox3D" parent="." unique_id=1055179255]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.1416755, 0, 2.158742)
+material = ExtResource("1_q6fih")
+
+[node name="CSGBox3D14" type="CSGBox3D" parent="." unique_id=1969181606]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.0628437, 0, 2.158742)
+material = ExtResource("1_q6fih")
+
+[node name="CSGBox3D15" type="CSGBox3D" parent="." unique_id=1034521958]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.1416755, 0, 3.2481685)
+material = ExtResource("1_q6fih")
+
+[node name="CSGBox3D16" type="CSGBox3D" parent="." unique_id=1758341868]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.0628437, 0, 3.2481685)
+material = ExtResource("1_q6fih")

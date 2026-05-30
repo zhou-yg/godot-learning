@@ -1,0 +1,18 @@
+[gd_resource type="ShaderMaterial" format=3 uid="uid://b4em4mbtm4bcr"]
+
+[ext_resource type="Shader" uid="uid://bt564bdk0nm7v" path="res://3d/whole-grids/water-grid.gdshader" id="1_wg6vw"]
+
+[sub_resource type="FastNoiseLite" id="FastNoiseLite_wg6vw"]
+
+[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_7ylpt"]
+noise = SubResource("FastNoiseLite_wg6vw")
+
+[resource]
+render_priority = 0
+shader = ExtResource("1_wg6vw")
+shader_parameter/water_color = Color(0.17041627, 0.4141394, 0.95286804, 1)
+shader_parameter/ripple_color = Color(0.6697265, 0.8919069, 0.9999997, 1)
+shader_parameter/ripple_speed = 0.15
+shader_parameter/ripple_scale = 0.04
+shader_parameter/ripple_sharpness = 4.0
+shader_parameter/noise_texture = SubResource("NoiseTexture2D_7ylpt")

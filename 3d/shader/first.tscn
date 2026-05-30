@@ -1,0 +1,47 @@
+[gd_scene format=3 uid="uid://bmojgy4gpxnib"]
+
+[ext_resource type="Shader" uid="uid://duxc0he6i1iqk" path="res://3d/shader/first.gdshader" id="1_jpg22"]
+[ext_resource type="Script" uid="uid://bqu4t4y4js1b6" path="res://3d/compositor/outline_compositor.gd" id="2_740dc"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_740dc"]
+render_priority = 0
+shader = ExtResource("1_jpg22")
+
+[sub_resource type="Environment" id="Environment_jpg22"]
+background_mode = 1
+background_color = Color(0.5686275, 0.9019608, 0.9019608, 1)
+
+[sub_resource type="CompositorEffect" id="CompositorEffect_vr2v0"]
+resource_local_to_scene = false
+resource_name = ""
+enabled = false
+effect_callback_type = 4
+needs_motion_vectors = false
+needs_normal_roughness = false
+script = ExtResource("2_740dc")
+edge_threshold = 0.01
+debug_mode = 0
+metadata/_custom_type_script = "uid://bqu4t4y4js1b6"
+
+[sub_resource type="Compositor" id="Compositor_jpg22"]
+compositor_effects = Array[CompositorEffect]([SubResource("CompositorEffect_vr2v0")])
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_jpg22"]
+render_priority = 0
+shader = ExtResource("1_jpg22")
+
+[node name="First" type="Node3D" unique_id=1606241013]
+
+[node name="CSGBox3D" type="CSGBox3D" parent="." unique_id=803489771]
+material = SubResource("ShaderMaterial_740dc")
+
+[node name="Camera3D" type="Camera3D" parent="." unique_id=1027915665]
+transform = Transform3D(0.548587, 0.43881863, -0.7116817, -0.23605217, 0.8978586, 0.37165758, 0.80207974, -0.03589247, 0.59613764, -1.8154359, 1.0909194, 1.91)
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=11390625]
+environment = SubResource("Environment_jpg22")
+compositor = SubResource("Compositor_jpg22")
+
+[node name="CSGSphere3D" type="CSGSphere3D" parent="." unique_id=929081280]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.4718335, 0, 0)
+material = SubResource("ShaderMaterial_jpg22")

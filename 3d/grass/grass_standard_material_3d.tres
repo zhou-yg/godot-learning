@@ -1,0 +1,19 @@
+[gd_resource type="ShaderMaterial" format=3 uid="uid://mnyjenjm5q81"]
+
+[ext_resource type="Shader" uid="uid://cy8dh3p336j5u" path="res://3d/grass/grass_standard_material_3d.gdshader" id="1_a1mfa"]
+[ext_resource type="Texture2D" uid="uid://doapl1lxy3ebj" path="res://3d/grass/grass_grid_noise_texture_2d.tres" id="2_fkqd5"]
+
+[resource]
+render_priority = 0
+shader = ExtResource("1_a1mfa")
+shader_parameter/top_grass_bright = Color(0.44, 0.72, 0.22, 1)
+shader_parameter/top_grass_dark = Color(0.31, 0.58, 0.17, 1)
+shader_parameter/side_dirt_color = Color(0.53, 0.36, 0.24, 1)
+shader_parameter/grass_scale = 0.05
+shader_parameter/color_layers = 3.0
+shader_parameter/noise_large = ExtResource("2_fkqd5")
+shader_parameter/side_fringe_scale = 16.0
+shader_parameter/side_grass_depth = 0.2
+shader_parameter/grain_scale = 256.0
+shader_parameter/grain_depth = 0.2
+shader_parameter/grain_roughness = 0.95
