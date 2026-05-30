@@ -6,6 +6,7 @@
 
 [sub_resource type="NoiseTexture2D" id="NoiseTexture2D_ieraw"]
 noise = SubResource("FastNoiseLite_ieraw")
+seamless = true
 
 [resource]
 render_priority = 0
