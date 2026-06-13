@@ -1,0 +1,64 @@
+[gd_scene format=3 uid="uid://blmsh82cy5cut"]
+
+[ext_resource type="Script" uid="uid://ujdrl366rkwn" path="res://3d/compositor/pixel-compositor.gd" id="1_vs8io"]
+[ext_resource type="Texture2D" uid="uid://2t1l3m7tlpdy" path="res://art/playerGrey_up1.png" id="2_dpfdr"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_mhq05"]
+albedo_color = Color(0.47592735, 0.47592735, 0.4759273, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_vs8io"]
+albedo_color = Color(0, 0.95069855, 0.96334285, 1)
+
+[sub_resource type="Environment" id="Environment_mhq05"]
+background_mode = 1
+background_color = Color(0.61542195, 0.61542195, 0.61542195, 1)
+
+[sub_resource type="CompositorEffect" id="CompositorEffect_vs8io"]
+resource_local_to_scene = false
+resource_name = ""
+enabled = true
+effect_callback_type = 1
+access_resolved_color = false
+access_resolved_depth = false
+needs_motion_vectors = false
+needs_normal_roughness = false
+script = ExtResource("1_vs8io")
+metadata/_custom_type_script = "uid://ujdrl366rkwn"
+
+[sub_resource type="Compositor" id="Compositor_b4x66"]
+compositor_effects = Array[CompositorEffect]([SubResource("CompositorEffect_vs8io")])
+
+[sub_resource type="ViewportTexture" id="ViewportTexture_dpfdr"]
+viewport_path = NodePath("SubViewport")
+
+[node name="CompositorTest" type="Node3D" unique_id=1002004692]
+
+[node name="CSGBox3D" type="CSGBox3D" parent="." unique_id=1149993973]
+transform = Transform3D(0.86768734, 0.09979641, -0.48699003, 0, 0.97964185, 0.20075305, 0.49711028, -0.17419088, 0.85002285, 0, 0, 0)
+material = SubResource("StandardMaterial3D_mhq05")
+
+[node name="CSGTorus3D" type="CSGTorus3D" parent="." unique_id=93010455]
+transform = Transform3D(1, 0, 0, 0, 0.70301, -0.7111799, 0, 0.7111799, 0.70301, 1.9098511, 0, 0)
+material = SubResource("StandardMaterial3D_vs8io")
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=224294955]
+environment = SubResource("Environment_mhq05")
+compositor = SubResource("Compositor_b4x66")
+
+[node name="Camera3D" type="Camera3D" parent="." unique_id=1600884469]
+transform = Transform3D(0.9766348, 0, -0.21490578, 0, 1, 0, 0.21490578, 0, 0.9766348, 0, 0, 4.3322754)
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=917782820]
+
+[node name="SubViewport" type="SubViewport" parent="." unique_id=512261413]
+transparent_bg = true
+size = Vector2i(108, 135)
+
+[node name="Sprite2D" type="Sprite2D" parent="SubViewport" unique_id=21273409]
+texture = ExtResource("2_dpfdr")
+centered = false
+
+[node name="Sprite3D" type="Sprite3D" parent="." unique_id=669394181]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.0100708, 1.2692261, -1.758667)
+billboard = 1
+texture = SubResource("ViewportTexture_dpfdr")

@@ -1,0 +1,10 @@
+[gd_resource type="ShaderMaterial" format=3 uid="uid://b3rwkfslqchg0"]
+
+[ext_resource type="Shader" uid="uid://cvdctsagjyfdf" path="res://3d/shader-inspector/3d-inspector.gdshader" id="1_qievl"]
+
+[resource]
+render_priority = 0
+shader = ExtResource("1_qievl")
+shader_parameter/debug_mode = 9
+shader_parameter/position_scale = 1.0
+shader_parameter/depth_range = 10.0

@@ -1,0 +1,12 @@
+[gd_scene format=3 uid="uid://bwl2drobhag4c"]
+
+[ext_resource type="Material" uid="uid://b3rwkfslqchg0" path="res://3d/shader-inspector/shader_inspector_material.tres" id="1_htk1r"]
+
+[node name="3dInspector" type="Node3D" unique_id=595921255]
+
+[node name="CSGBox3D" type="CSGBox3D" parent="." unique_id=1846664354]
+material = ExtResource("1_htk1r")
+
+[node name="CSGSphere3D" type="CSGSphere3D" parent="." unique_id=1064154287]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.3635921, 0, 0)
+material = ExtResource("1_htk1r")
